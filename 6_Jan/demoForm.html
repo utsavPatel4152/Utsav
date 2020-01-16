@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>HTML Form</title>
+        <style>
+            label,input{
+                margin-bottom: 25px;
+            }
+            select{
+                margin: 25px;
+            }
+        </style>
+        <script src="displayForm.js"></script>
+    </head>
+
+    <body>
+        <h2 align="center">HTML Form</h2>
+        <form align="center">
+            <label for="username">Username : </label>
+            <input type="text" name="username" id="username"><br>
+            
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password"><br>
+
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female<br>             
+
+            <label for="hobbies">Hobbies : </label>
+            <input type="checkbox" name="sports" value="Cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" name="sports" value="Baseball">
+            <label for="baseball">Baseball</label>
+            <input type="checkbox" name="sports" value="Football">
+            <label for="football">Football</label><br>
+
+            <label for="address">Address : </label>
+            <textarea rows="7" cols="30" name="address" id="address"></textarea><br>
+
+            <label for="country">Country : </label>
+            <select name="country" id="country">
+                <option value="selectCountry">---Select Country---</option>
+                <option value="india">India</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="usa">USA</option>
+                <option value="iran">Iran</option>
+            </select><br>
+        
+            <label for="file-select">Upload : </label>
+            <input type="file" name="upload" id="file-select"><br> 
+
+            <input type="button" value="Submit" onclick="onSubmit()">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div>
+            <div id="usrname"></div>
+            <div id="pwd"></div>
+            <div id="gnder"></div>
+            <div id="hobby"></div>
+            <div id="addrss"></div>
+            <div id="contry"></div>
+            <div id="files"></div>
+        </div>
+    </body>
+</html>

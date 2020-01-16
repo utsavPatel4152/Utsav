@@ -1,0 +1,58 @@
+<!-- Cybercom Industrial Taining Program 2020
+accountCreate.html
+Left - Login : phone, password
+Right - Registration : Firstname, lastname, email, phone, passwrd, submit -->
+
+<html>
+    <head>
+        <title>Login Registration Form</title>
+        <style>
+            label,input{
+                margin-bottom: 25px;
+            }
+        </style>
+        <script src="loginReg.js"></script>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="left">
+                <h2>Login</h2>
+                <label for="loginEmail">Email : </label>
+                <input type="text" name="email" id="loginEmail"><br>
+                
+                <label for="loginPassword">Password : </label>
+                <input type="password" name="loginPassword" id="loginPassword"><br>
+
+                <input type="button" value="Login" onclick="onLogin()">
+            </div>
+
+            <div class="right">
+                <h2>Sign Up</h2>
+                <label for="firstname">Firstname : </label>
+                <input type="text" name="firstname" id="firstname"><br>
+
+                <label for="lastname">Lastname : </label>
+                <input type="text" name="lastname" id="lastname"><br>
+
+                <label for="email">Email ID : </label>
+                <input type="text" name="email" id="email"><br>
+
+                <label for="phone">Phone No. : </label>
+                <input type="tel" maxlength="10" name="phone" id="phone"><br>
+
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password"><br>
+
+                <input type="button" value="Submit" onclick="onSignUp()">
+            </div>
+        </div>
+        <div>
+            <div id="firstName"></div>
+            <div id="lastName"></div>
+            <div id="Email"></div>
+            <div id="Phone"></div>
+            <div id="pwd"></div>
+        </div>
+    </body>
+</html>

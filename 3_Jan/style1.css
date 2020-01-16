@@ -1,0 +1,15 @@
+.main{
+    margin: 10px;
+}
+
+img{
+    height: 315;
+    width: 215;
+}
+
+.content{
+    text-align: center;
+    font-size: medium;
+    background-color: lightgray;
+    color: gray;
+}

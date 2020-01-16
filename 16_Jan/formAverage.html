@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Practice Average Form</title>
+        <link rel="stylesheet" type="text/css" href="averageStyle.css">
+    </head>
+
+    <body>
+        <form>
+            <label for="stuName">Name : </label>
+            <input type="text" id="studName"><br>
+
+            <label for="mathsMarks">Maths : </label>
+            <input type="number" id="maths"><br>
+
+            <label for="engMarks">English : </label>
+            <input type="number" id="english"><br>
+
+            <label for="passYear">Passing Year : </label>
+            <input type="number" id="passYear"><br>
+
+            <input type="button" value="Submit" onclick="onSubmit()">
+        </form>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Maths</th>
+                <th>English</th>
+                <th>Average</th>
+                <th>Passing Year</th>
+                <th>Created Date</th>
+            </tr>
+            
+            <tbody id='dynamicTable'>
+            </tbody>
+        </table>
+
+    </body>
+    
+    <script src="averageScript.js"></script>
+</html>
